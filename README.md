@@ -34,3 +34,4 @@ This is a Django-based e-commerce project.
 
 ## Notes
 - This project is for development/testing only. Do not use in production without proper configuration.
+# deployment-test

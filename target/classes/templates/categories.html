@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Catégories</title>
+    <style>body{font-family:Arial,sans-serif;margin:2rem;}table{border-collapse:collapse;width:100%;}th,td{border:1px solid #ddd;padding:8px;text-align:left;}th{background:#f4f4f4;}</style>
+</head>
+<body>
+<h1>Liste des catégories</h1>
+<table>
+<thead><tr><th>ID</th><th>Nom</th></tr></thead>
+<tbody>
+<tr th:each="c : ${categories}">
+    <td th:text="${c.id}"></td>
+    <td th:text="${c.name}"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="/products">Voir les produits</a></p>
+</body>
+</html>

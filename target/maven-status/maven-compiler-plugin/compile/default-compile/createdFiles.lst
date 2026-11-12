@@ -1,0 +1,7 @@
+com/ecommerce/EcommerceApplication.class
+com/ecommerce/model/Product.class
+com/ecommerce/repository/ProductRepository.class
+com/ecommerce/controller/ProductController.class
+com/ecommerce/repository/CategoryRepository.class
+com/ecommerce/controller/CategoryController.class
+com/ecommerce/model/Category.class
