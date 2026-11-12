@@ -22,13 +22,13 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore WebApp.sln
 
       - name: Build
-        run: dotnet build --configuration Release
+        run: dotnet build WebApp.sln --configuration Release
 
       - name: Publish
-        run: dotnet publish -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        run: dotnet publish src/WebApp/WebApp.csproj -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
